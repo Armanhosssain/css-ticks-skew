@@ -1,0 +1,76 @@
+.header{
+	height: 300px;
+	width: 300px;
+	background-color: #ccc;
+	transform: skew(-40deg);
+	margin: auto;
+	padding: 30px;
+}
+.header1{
+	height: 200px;
+	width: 300px;
+	transform: skew(-40deg);
+	padding: 30px;
+	margin: auto;
+	background-color: #f7f7f7;
+}
+.container{
+	background-color: #ddd;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	position: relative;
+}
+.header:hover{
+	background-color: #00ff00;
+}
+.header1:hover{
+	transform: scale(1.2);
+}
+ #triangle-bottomright {
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 300px solid red;
+      border-left: 300px solid transparent;
+    }
+       #moon {
+          width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 black;
+    z-index: 100;
+    position: absolute;
+    right: 100px;
+    bottom: -243px;
+
+    }
+   #cut-diamond {
+      border-style: solid;
+    border-color: transparent transparent green transparent;
+    border-width: 0 20px 20px 20px;
+    height: 0;
+    width: 35px;
+    box-sizing: content-box;
+    position: relative;
+    margin: 20px 0 50px 0;
+    display: none;
+    }
+    #cut-diamond:after {
+      content: "";
+    position: absolute;
+    top: 20px;
+    left: -19px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: green transparent transparent transparent;
+    border-width: 37px 41px 0 34px;
+}
+#moon:hover #cut-diamond{
+	display: block;
+}
